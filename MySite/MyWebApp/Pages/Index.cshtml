@@ -2,11 +2,31 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+
+    var message = string.Empty;
+    if (DateTime.Now.Hour >= 5 && DateTime.Now.Hour <= 12)
+    {
+        message = "Good morning,";
+    }
+    else if (DateTime.Now.Hour > 12 && DateTime.Now.Hour <= 18)
+    {
+        message = "Good afternoon,";
+    }
+    else
+    {
+        message = "Good evening,";
+    }
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<div class="row default-padding">
+    <h1 class="display-4">@message my name is Luiz.</h1>
     <div class="container">
-        <p>Hello there, <span class="auto-type"></span></p>
+        <p><span class="auto-type"></span></p>
+    </div>
+</div>
+<div class="row default-padding">
+    <h1 class="display-4">@message</h1>
+    <div class="container">
+        <p><span class="auto-type"></span></p>
     </div>
 </div>

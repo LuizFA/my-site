@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.default-padding {
+    padding-top: 90px;
+}
