@@ -8,13 +8,23 @@ var typed = new Typed(".auto-type", {
     typeSpeed: 75,
     backSpeed: 50,
     cursorChar: '_',
-    loop: false,
-    onComplete: (self) => {
-        self.strings = "I'm a full stack developer based on Quebec/CA, currently working for a Montreal's ecommerce company.<br>How can I help you?",
-        self.onComplete += (instance) => {
-                instance.cursor.remove();
-            }
-        //todo:restart here after loop complete
-        self.start();
-        }
-    })
+    loop: true
+})
+
+
+function liveDate() {
+    var currentDate = new Date();
+    const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    };
+
+    $('#currentServerDate').html(currentDate.toLocaleDateString("en-US", options) +" | "+ currentDate.toLocaleTimeString('en-US'));
+    var t = setTimeout(liveDate, 100);
+}
+
+$(document).ready(function () {
+    liveDate();
+});
