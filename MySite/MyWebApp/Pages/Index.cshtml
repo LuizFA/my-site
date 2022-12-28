@@ -6,7 +6,7 @@
                 During this period, I've worked with C# and VB .NET, Angular, Sharepoint, DataBases, PHP and others.<br/>
                 I also have accumulated a good knowledge on project management and agile methodologies.<br/>
                 Even so, I always say that I'm still learning, so I can keep improving myself.<br/>
-                Would you like to get to know more, leave a message or take a look at my complete profile.";
+                Would you like to get to know more, leave a message or take a look at my complete <a href=>profile.";
     var message = string.Empty;
     if (DateTime.Now.Hour >= 5 && DateTime.Now.Hour <= 12)
     {
@@ -31,5 +31,31 @@
         <h2 class="display-4">About me</h2>
     </div>
 
-    <p>@Html.Raw(aboutme)</p>
+    <div class="row">
+        <div class="col-sm-8">
+            <p class="row">
+                <div class="align-content-center">
+                    I'm a fullstack developer who has been venturing into the technology world for over 10 years.
+                </div>
+            </p>
+            <p class="row">
+                <div class="align-content-center">
+                    Most of that time, I've been working for private companies, learning and trying to provide not only technical support, but also an understanding of requirements in order to advise and better respond to their needs.
+                </div>
+            </p>
+            <p class="row">
+                <div class="align-content-center">
+                    Due to this behavior, I also acquired a good knowledge of software architecture, project management and agile methodologies.
+                </div>
+            </p>
+            <p class="row">
+                <div class="align-content-center">
+                    Would you like to know more, <a class="styled-link" asp-page="/">contact me</a> or take a look at my complete <a class="styled-link" asp-page="/About">profile</a>
+                </div>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <img src="~/img/luiz_bw_profile_small.png" />
+        </div>
+    </div>
 </div>
