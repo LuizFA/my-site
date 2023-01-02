@@ -47,6 +47,32 @@ nav ul {
     letter-spacing: 5px;
 }
 
+
+.nav-item {
+    position: relative;
+    text-decoration: none;
+    padding: 0 1px;
+}
+
+.nav-item:hover {
+    color: #1e293b;
+}
+
+.nav-item:after {
+    content: "";
+    position: absolute;
+    background-color: #1e293b;
+    height: 1px;
+    width: 0;
+    bottom: -5px;
+    transition: 0.3s;
+    left: 0;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+}
+
 .resume {
     background-color: #1e293b;
     border: solid 2px #e2e8f0;
@@ -123,11 +149,6 @@ nav ul {
     .after-padding hr {
         border: 0;
         border-radius: 10px;
-        height: 1px;
-        background-image: -webkit-linear-gradient(left, #f0f0f0, #1e293b, #f0f0f0);
-        background-image: -moz-linear-gradient(left, #f0f0f0, #1e293b, #f0f0f0);
-        background-image: -ms-linear-gradient(left, #f0f0f0, #1e293b, #f0f0f0);
-        background-image: -o-linear-gradient(left, #f0f0f0, #1e293b, #f0f0f0);
     }
 
 .min-content-height {
