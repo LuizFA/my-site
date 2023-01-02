@@ -33,7 +33,7 @@ nav ul {
     }
 
 .default-padding {
-    padding-top: 90px;
+    padding-top: 100px;
 }
 
 .img-logo {
@@ -51,7 +51,7 @@ nav ul {
 .resume {
     background-color: #1e293b;
     border: solid 2px #e2e8f0;
-    border-radius: 7px;
+    border-radius: 10px;
     color: #fff !important;
     cursor: pointer;
     font-size: 16px;
@@ -94,3 +94,31 @@ nav ul {
     .styled-link:hover:after {
         width: 100%;
     }
+
+.home-main-header {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.img-content {
+    align-content:center;
+    max-height:260px;
+    width:auto;
+}
+
+.content-text-right {
+    align-content:start;
+    text-align:left;
+}
+.content-image-left {
+    align-content:center;
+}
+
+.after-padding {
+    padding-bottom: 15%;
+    border-bottom: 1px solid #1e293b;
+    width:75%;
+}
