@@ -8,10 +8,6 @@ html {
     }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
 html {
     position: relative;
     min-height: 100%;
@@ -20,6 +16,9 @@ html {
 
 body {
     margin-bottom: 60px;
+    background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
 nav ul {
@@ -104,21 +103,35 @@ nav ul {
 }
 
 .img-content {
-    align-content:center;
-    max-height:260px;
-    width:auto;
+    align-content: center;
+    max-height: 260px;
+    width: auto;
 }
 
 .content-text-right {
-    align-content:start;
-    text-align:left;
+    align-content: start;
+    text-align: left;
 }
+
 .content-image-left {
-    align-content:center;
+    align-content: center;
 }
 
 .after-padding {
-    padding-bottom: 15%;
-    border-bottom: 1px solid #1e293b;
-    width:75%;
+    padding: 10%;
+}
+    .after-padding hr {
+        border: 0;
+        border-radius: 10px;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, #f0f0f0, #1e293b, #f0f0f0);
+        background-image: -moz-linear-gradient(left, #f0f0f0, #1e293b, #f0f0f0);
+        background-image: -ms-linear-gradient(left, #f0f0f0, #1e293b, #f0f0f0);
+        background-image: -o-linear-gradient(left, #f0f0f0, #1e293b, #f0f0f0);
+    }
+
+.min-content-height {
+    min-height: 250px;
+    align-content: center;
+    border-radius:10px;
 }
